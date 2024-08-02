@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
-import './App.css'; // Import the CSS file for styling
+import './App.css'; 
 
 function App() {
   const [jsonInput, setJsonInput] = useState('');
