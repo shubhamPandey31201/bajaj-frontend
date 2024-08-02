@@ -20,7 +20,7 @@ function App() {
 
   const handleSubmit = async () => {
     if (!isValidJson(jsonInput)) {
-      setError('Invalid JSON format. Please correct it and try again.');
+      setError('Invalid JSON format.');
       setResponse(null);
       return;
     }
@@ -86,6 +86,8 @@ function App() {
           id="jsonInput"
           value={jsonInput}
           onChange={(e) => setJsonInput(e.target.value)}
+          placeholder='Enter JSON'
+          rows="2"
         />
         <button onClick={handleSubmit}>Submit</button>
         {error && <p style={{ color: 'red' }}>{error}</p>}
@@ -93,7 +95,7 @@ function App() {
 
       {response && (
         <div className="dropdown-container">
-          <label>Multi Filter</label>
+          <label>Select which data you want</label>
           <Select
             isMulti
             options={options}
