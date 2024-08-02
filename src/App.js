@@ -95,7 +95,7 @@ function App() {
 
       {response && (
         <div className="dropdown-container">
-          <label>Select which data you want</label>
+          <label>Multi Filter</label>
           <Select
             isMulti
             options={options}
