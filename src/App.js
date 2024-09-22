@@ -29,7 +29,7 @@ function App() {
       const parsedJson = JSON.parse(jsonInput);
       console.log('Parsed JSON:', parsedJson);
 
-      const res = await axios.post('https://bajaj-backend-ruby.vercel.app/bfhl', parsedJson, {
+      const res = await axios.post('https://bajaj-finserv-backend-mk0l.onrender.com/bfhl', parsedJson, {
         headers: { 'Content-Type': 'application/json' },
       });
       console.log('API Response:', res.data);
